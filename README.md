@@ -4,26 +4,24 @@ Este proyecto es una aplicación de consola desarrollada en Java que permite ges
 
 ## 🚀 Funcionalidades
 
-- Gestión de clientes:
+- **Gestión de clientes:**
   - Agregar, listar, buscar, actualizar y eliminar clientes.
-- Gestión de productos:
+- **Gestión de productos:**
   - Agregar, listar, buscar, actualizar y eliminar productos.
-- Gestión de pedidos:
+- **Gestión de pedidos:**
   - Crear pedidos con selección de cliente y productos.
   - Listar todos los pedidos.
   - Consultar detalles de un pedido.
   - Eliminar pedidos.
-- Datos de Prueba:
-  - Cuenta con datos que se crean automaticamente para probar las funcionales desde un comienzo.
+- **Datos de prueba:**
+  - Se cargan automáticamente desde el archivo `DatosPruebas.sql`.
 
 ## 🧱 Estructura del Proyecto
 
-El proyecto está organizado en los siguientes paquetes:
-
-- `org.example.main`: Contiene la clase principal `Main` que lanza el menú interactivo.
-- `org.example.model`: Contiene las clases modelo `Cliente`, `Producto`, `Pedido`, `DetallePedido`.
-- `org.example.dao`: Contiene las interfaces y clases DAO (`ClienteDAO`, `ProductoDAO`, `PedidoDAO`, etc.).
-- `org.example.util`: Contiene la clase `DBUtil` para la conexión a la base de datos.
+- `org.example.main`: Clase principal `Main` con menú interactivo.
+- `org.example.model`: Modelos de datos (`Cliente`, `Producto`, `Pedido`, `DetallePedido`).
+- `org.example.dao`: Interfaces DAO y clases DAO.
+- `org.example.util`: Utilidades (`DBUtil`, `Log`, scripts SQL y configuración de logging).
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -31,35 +29,33 @@ El proyecto está organizado en los siguientes paquetes:
 - Gradle
 - JDBC
 - H2 Database (modo archivo)
-- Log4j (para logging)
-- Arquitectura en capas + patrón DAO
+- Log4j 2
+- Arquitectura en capas + DAO
 
 ## 🗂️ Base de Datos
 
-- El archivo de base H2 se crea automáticamente en el directorio raíz con el nombre: `base_mascotas.mv.db`.
-- No requiere instalación adicional de servidor de base de datos.
+- La base H2 se genera automáticamente como archivo `base_mascotas.mv.db`.
+- No se necesita instalar un servidor externo de base de datos.
 
 ## ▶️ Ejecución
 
-1. Clonar o descargar el proyecto.
-2. Abrir con IntelliJ o cualquier IDE compatible con Gradle.
+1. Clonar el repositorio.
+2. Abrir el proyecto con un IDE compatible con Gradle (recomendado: **NetBeans**).
 3. Ejecutar la clase `Main.java` desde `org.example.main`.
 
 ## 📋 Requisitos
 
 - Java JDK 17 o superior.
-- Gradle (el proyecto incluye `build.gradle`).
-- IDE recomendado: NetBeans.
+- Gradle (el proyecto ya incluye `gradlew`).
+- IDE recomendado: NetBeans (fue el más estable durante el desarrollo).
 
 ## 📝 Notas
 
-- La aplicación corre por consola.
-- Incluye validaciones básicas (campos obligatorios, número válido, email válido, etc.).
-- El sistema se puede ampliar fácilmente a una versión con interfaz gráfica (Swing/JavaFX) o web.
+- Aplicación por consola.
+- Incluye validaciones básicas (campos obligatorios, tipo de datos, email válido).
+- El sistema puede evolucionar a interfaz gráfica (Swing/JavaFX) o web.
 
 ---
 
-📫 Desarrollado por [Gianfranco Guzman]
-
-
+📫 Desarrollado por [Gianfranco Guzmán](https://github.com/Gianfranco-Guzman)
 
