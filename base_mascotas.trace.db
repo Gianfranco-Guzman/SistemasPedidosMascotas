@@ -1,0 +1,9 @@
+2025-05-29 20:32:29.751170-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTE" not found (this database is empty); SQL statement:
+SELECT * FROM cliente [42104-224]
+2025-05-29 20:32:29.845489-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTE" not found (this database is empty); SQL statement:
+INSERT INTO cliente (nombre, apellido, email) VALUES (?, ?, ?) [42104-224]
+2025-05-29 20:32:29.943642-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENTE" not found (this database is empty); SQL statement:
+SELECT * FROM cliente [42104-224]
